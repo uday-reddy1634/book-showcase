@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Win Friends & Influence People</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #055cde, #eac006);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: aqua;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .book-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .book-image {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .principle {
+            background-color: #fff;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 8px 0;
+            font-size: 16px;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Feedback Form Styles */
+        .feedback-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-form h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .book-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .book-image {
+                width: 80%;
+                max-width: 300px;
+            }
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>How to Win Friends & Influence People</h1>
+            <p>By Dale Carnegie</p>
+        </header>
+
+        <div class="book-section">
+            <img src="Images/how to influence .png" alt="Book Cover" class="book-image">
+            <div class="content">
+                <section class="principle">
+                    <h2>Fundamental Techniques in Handling People</h2>
+                    <ul>
+                        <li>Don't criticize, condemn, or complain.</li>
+                        <li>Give honest and sincere appreciation.</li>
+                        <li>Arouse in the other person an eager want.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <section class="principle">
+            <h2>Ways to Make People Like You</h2>
+            <ul>
+                <li>Become genuinely interested in other people.</li>
+                <li>Smile.</li>
+                <li>Remember that a person’s name is, to that person, the sweetest sound.</li>
+                <li>Be a good listener; encourage others to talk about themselves.</li>
+                <li>Talk in terms of the other person's interests.</li>
+                <li>Make the other person feel important—and do it sincerely.</li>
+            </ul>
+        </section>
+
+        <section class="principle">
+            <h2>How to Win People to Your Way of Thinking</h2>
+            <ul>
+                <li>The only way to get the best of an argument is to avoid it.</li>
+                <li>Show respect for the other person’s opinions. Never say, “You’re wrong.”</li>
+                <li>If you are wrong, admit it quickly and emphatically.</li>
+                <li>Begin in a friendly way.</li>
+                <li>Get the other person saying "yes, yes" immediately.</li>
+                <li>Let the other person do most of the talking.</li>
+                <li>Let the other person feel the idea is his or hers.</li>
+                <li>Try honestly to see things from the other person’s point of view.</li>
+                <li>Be sympathetic with the other person’s ideas and desires.</li>
+                <li>Appeal to the nobler motives.</li>
+                <li>Dramatize your ideas.</li>
+                <li>Throw down a challenge.</li>
+            </ul>
+        </section>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>Feedback Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Feedback</label>
+                    <textarea id="comments" rows="4" placeholder="Write your feedback here..." required></textarea>
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>Summary of <em>How to Win Friends & Influence People</em></p>
+        </footer>
+    </div>
+</body>
+</html>

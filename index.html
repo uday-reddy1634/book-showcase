@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Showcase - Explore Best Books on Finance & Success</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    /* Background animation */
+    @keyframes background-animation {
+      0% { background-color: #ff9a9e; }
+      25% { background-color: #fad0c4; }
+      50% { background-color: #a18cd1; }
+      75% { background-color: #fbc2eb; }
+      100% { background-color: #ff9a9e; }
+    }
+
+    body {
+      animation: background-animation 10s infinite alternate ease-in-out;
+      transition: background 0.5s ease;
+    }
+
+    .container-fluid {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 150px;
+    }
+    
+    .flip-card-container {
+      width: 200px;
+      height: 320px;
+      perspective: 1000px;
+    }
+
+    .flip-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+      background-color: #373a37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .flip-card-back a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: 2px solid white;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .flip-card-back a:hover {
+      background-color: white;
+      color: #373a37;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container-fluid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center p-3 fw-bolder fs-5">Welcome to My Book Showcase</header>
+
+  <!-- Introduction -->
+  <div class="text-center mt-4">
+    <h2>Explore Top Books on Finance & Success</h2>
+    <p>Enhance your financial knowledge with the best books on money, investing, and personal growth.</p>
+  </div>
+  
+  <!-- Book Showcase -->
+  <div class="container-fluid">
+    <div class="flip-card-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="Images/rich dad poor dad.png" height="300px" width="100%" alt="Rich Dad Poor Dad Book Cover">
+        </div>
+        <div class="flip-card-back">
+          <a href="book1.html">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="Images/cashflow.png" height="300px" width="100%" alt="Cashflow Quadrant Book Cover">
+        </div>
+        <div class="flip-card-back">
+          <a href="book2.html">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container">
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img src="Images/how to influence .png" height="300px" width="100%" alt="How to Influence Book Cover">
+        </div>
+        <div class="flip-card-back">
+          <a href="book3.html">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Book Showcase | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
